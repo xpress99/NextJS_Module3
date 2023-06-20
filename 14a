@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+            function sendGetRequest() {
+            fetch('https://api.example.com/data')
+                .then(response => {
+                if (response.ok) {
+                    return response.json();
+                } else {
+                    throw new Error('Request failed.');
+                }
+                })
+                .then(data => {
+                console.log(data); // Process the response data here
+                })
+                .catch(error => {
+                console.error(error); // Handle any errors that occur during the request
+                });
+            }
+            sendGetRequest()
+        </script>
+        
+</body>
+</html>
