@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <script>
+        function sendPostRequest(data) {
+        fetch('https://api.example.com/submit', {
+            method: 'POST',
+            headers: {
+            'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        })
+            .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Request failed.');
+            }
+            })
+            .then(data => {
+            console.log(data); // Process the response data here
+            })
+            .catch(error => {
+            console.error(error); // Handle any errors that occur during the request
+            });
+        }
+
+        // Example usage
+        const payload = { "name": "John Doe", "email": "johndoe@example.com" };
+        sendPostRequest(payload);
+
+        </script>
+        
+</body>
+</html>
