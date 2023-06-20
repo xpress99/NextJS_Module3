@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Image Mouseover Example</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+  </style>
+  <script>
+    function changeImageSource(element) {
+      element.src = 'new-image.jpg'; // Replace 'new-image.jpg' with the path to your desired image
+    }
+  </script>
+</head>
+<body>
+  <h1>Move the Mouse Over the Image</h1>
+  <img src="original-image.jpg" onmouseover="changeImageSource(this)" alt="Original Image">
+</body>
+</html>
