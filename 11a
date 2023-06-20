@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Empty Unordered List Example</title>
+</head>
+<body>
+  <h1>Empty Unordered List Example</h1>
+  <ul id="list"></ul>
+</body>
+</html>
