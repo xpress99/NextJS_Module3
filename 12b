@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Element Example</title>
+  <script>
+    function changeImageSource() {
+      const img = document.getElementById('myImage');
+      img.src = 'new-image.jpg';
+      img.alt = 'New Image';
+    }
+  </script>
+</head>
+<body>
+  <h1>Image Element Example</h1>
+  <img src="initial-image.jpg" alt="Initial Image" id="myImage">
+  <button onclick="changeImageSource()">Change Image Source</button>
+</body>
+</html>
