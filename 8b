@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button and Paragraph Example</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+  </style>
+  <script>
+    function handleClick() {
+      const paragraph = document.getElementById('message');
+      paragraph.textContent = 'Button clicked!';
+    }
+  </script>
+</head>
+<body>
+  <h1>Button and Paragraph Example</h1>
+  <button onclick="handleClick()">Click Me</button>
+  <p id="message"></p>
+</body>
+</html>
