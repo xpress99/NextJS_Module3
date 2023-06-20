@@ -1,0 +1,23 @@
+<head>
+    <body>
+        <script>
+		function getDayOfWeek(dateString) {
+			const dateParts = dateString.split('-');
+			const year = parseInt(dateParts[0]);
+			const month = parseInt(dateParts[1]) - 1; // Month is zero-based
+			const day = parseInt(dateParts[2]);
+		  
+			const date = new Date(year, month, day);
+			const options = { weekday: 'long' };
+			const dayOfWeek = new Intl.DateTimeFormat('en-US', options).format(date);
+			
+			return dayOfWeek;
+		  }
+		  
+		  // Example
+		  const date = '2023-06-20';
+		  const dayOfWeek = getDayOfWeek(date);
+		  console.log(dayOfWeek);
+        </script>
+    </body>
+</head>
