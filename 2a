@@ -1,0 +1,15 @@
+<head>
+    <body>
+		<script>
+			function calculateSquareRootOfSumOfSquares(numbers) {
+				const sumOfSquares = numbers.reduce((accumulator, currentValue) => {
+				return accumulator + Math.pow(currentValue, 2);
+				}, 0);
+
+				const squareRoot = Math.sqrt(sumOfSquares);
+
+				return squareRoot;
+			}
+		</script>
+    </body>
+</head>
