@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Button and Paragraph Example</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    p {
+      margin-top: 20px;
+      font-size: 18px;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  </style>
+  <script>
+    function addHighlight() {
+      const paragraph = document.getElementById('message');
+      paragraph.classList.add('highlight');
+    }
+  </script>
+</head>
+<body>
+  <h1>Button and Paragraph Example</h1>
+  <button onclick="addHighlight()">Click Me</button>
+  <p id="message">This is a paragraph element.</p>
+</body>
+</html>
