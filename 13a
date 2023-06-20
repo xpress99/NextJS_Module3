@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Paragraphs Example</title>
+  <style>
+    .intro {
+      color: blue;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+    #important {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Multiple Paragraphs Example</h1>
+  
+  <p class="intro">This is an introductory paragraph.</p>
+  
+  <p>This is a regular paragraph.</p>
+  
+  <p class="highlight">This paragraph is highlighted.</p>
+  
+  <p id="important">This paragraph is important.</p>
+  
+  <p>This is another regular paragraph.</p>
+</body>
+</html>
