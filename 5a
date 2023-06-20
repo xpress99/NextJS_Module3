@@ -1,0 +1,47 @@
+<head>
+    <body>
+		<script>
+			function detectBrowser() {
+			const userAgent = navigator.userAgent;
+			let browserName;
+			let browserVersion;
+
+			// Check for Chrome
+			if (userAgent.indexOf('Chrome') !== -1) {
+				browserName = 'Chrome';
+				browserVersion = userAgent.match(/Chrome\/(\d+)/)[1];
+			}
+			// Check for Firefox
+			else if (userAgent.indexOf('Firefox') !== -1) {
+				browserName = 'Firefox';
+				browserVersion = userAgent.match(/Firefox\/(\d+)/)[1];
+			}
+			// Check for Safari
+			else if (userAgent.indexOf('Safari') !== -1) {
+				browserName = 'Safari';
+				browserVersion = userAgent.match(/Version\/(\d+)/)[1];
+			}
+			// Check for Internet Explorer
+			else if (userAgent.indexOf('Trident') !== -1) {
+				browserName = 'Internet Explorer';
+				browserVersion = userAgent.match(/rv:(\d+)/)[1];
+			}
+			// Check for Edge (Chromium-based)
+			else if (userAgent.indexOf('Edg') !== -1) {
+				browserName = 'Microsoft Edge';
+				browserVersion = userAgent.match(/Edg\/(\d+)/)[1];
+			}
+			// Default fallback
+			else {
+				browserName = 'Unknown';
+				browserVersion = 'Unknown';
+			}
+
+			return {
+				name: browserName,
+				version: browserVersion
+			};
+			}
+		</script>
+    </body>
+</head>
