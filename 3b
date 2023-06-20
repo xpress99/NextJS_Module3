@@ -1,0 +1,27 @@
+<head>
+    <body>
+        <script>
+        function isPrime(number) {
+        // Check if the number is less than 2 (not a prime number)
+        if (number < 2) {
+            return false;
+        }
+
+        // Check for divisibility by numbers from 2 to the square root of the number
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+            return false; // Divisible by a number other than 1 and itself
+            }
+        }
+
+        return true; // Number is prime
+        }
+
+        // Example usage:
+        const inputNumber = 5;
+        const result = isPrime(inputNumber);
+        console.log(result);
+
+        </script>
+    </body>
+</head>
