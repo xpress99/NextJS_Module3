@@ -1,0 +1,23 @@
+<html>
+<head>
+  <title>Key Code Example</title>
+  <script>
+    function handleKeyDown(event) {
+      const keyCode = event.keyCode || event.which;
+      alert(`Key code: ${keyCode}`);
+    }
+  </script>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+  </style>
+</head>
+<body onkeydown="handleKeyDown(event)">
+  <h1>Press Any Key on the Keyboard</h1>
+</body>
+</html>
