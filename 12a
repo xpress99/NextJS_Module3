@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Image Element Example</title>
+</head>
+<body>
+  <h1>Image Element Example</h1>
+  <img src="initial-image.jpg" alt="Initial Image" id="myImage">
+</body>
+</html>
