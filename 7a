@@ -1,0 +1,24 @@
+<html>
+<head>
+  <title>Click Coordinates Example</title>
+  <script>
+    function handleClick(event) {
+      const x = event.clientX;
+      const y = event.clientY;
+      alert(`Clicked coordinates: (${x}, ${y})`);
+    }
+  </script>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+    }
+  </style>
+</head>
+<body onclick="handleClick(event)">
+  <h1>Click Anywhere on the Page</h1>
+</body>
+</html>
