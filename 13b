@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiple Paragraphs Example</title>
+  <style>
+    .intro {
+      color: blue;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+    #important {
+      font-weight: bold;
+    }
+  </style>
+  <script>
+    function changeTextColor() {
+      const paragraphs = document.getElementsByClassName('intro');
+      for (let i = 0; i < paragraphs.length; i++) {
+        paragraphs[i].style.color = 'red';
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>Multiple Paragraphs Example</h1>
+  
+  <p class="intro">This is an introductory paragraph.</p>
+  
+  <p>This is a regular paragraph.</p>
+  
+  <p class="highlight">This paragraph is highlighted.</p>
+  
+  <p id="important">This paragraph is important.</p>
+  
+  <p class="intro">Another introductory paragraph.</p>
+  
+  <button onclick="changeTextColor()">Change Text Color</button>
+</body>
+</html>
