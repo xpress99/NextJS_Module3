@@ -1,0 +1,10 @@
+<head>
+    <body>
+		<script>
+			function openWindow(url, width, height) {
+			const windowFeatures = `width=${width},height=${height}`;
+			window.open(url, '_blank', windowFeatures);
+			}
+		</script>
+    </body>
+</head>
